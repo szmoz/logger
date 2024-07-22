@@ -1,5 +1,7 @@
 package logger
+
 import "fmt"
+
 func Info(data interface{}) {
 	fmt.Println("Log info: ", data)
 }
@@ -14,4 +16,8 @@ func Warning(data interface{}) {
 
 func Debug(data interface{}) {
 	fmt.Println("Log debug: ", data)
+}
+
+func Fatal(data interface{}) {
+	fmt.Println("Lof fatal: ", data)
 }
